@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="徐莹的产品岗位交互式个人作品集。">
+  <meta name="description" content="徐莹的交互式个人作品集，呈现学习经历、能力与项目实践。">
   <meta name="theme-color" content="#f4f3ee">
-  <title>徐莹｜产品方向个人作品集</title>
+  <title>徐莹｜个人作品集</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231b1d1c'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-size='20' fill='white'%3EXY%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="portfolio.css">
 </head>
@@ -14,14 +14,14 @@
   <div class="pointer-glow" aria-hidden="true"></div>
   <section id="welcome" class="welcome" aria-labelledby="welcome-title">
     <div class="welcome-grid" aria-hidden="true"></div>
-    <p class="welcome-top"><span>01</span> XU YING · PRODUCT PORTFOLIO <i>2027</i></p>
+    <p class="welcome-top"><span>01</span> XU YING · PERSONAL PORTFOLIO <i>2027</i></p>
     <div class="welcome-copy">
       <p>HELLO, NICE TO MEET YOU.</p>
       <h1 id="welcome-title"><span>WELCOME</span><br>TO MY<br>PROFILE.</h1>
-      <div><b>徐莹</b><span>用数据理解问题<br>用行动推进结果</span></div>
+      <div><b>徐莹</b><span>中国矿业大学 · 地球物理学<br>用数据理解问题，用行动推进结果</span></div>
     </div>
     <figure class="welcome-portrait" aria-label="徐莹个人形象照">
-      <span aria-hidden="true">PRODUCT<br>CANDIDATE</span>
+      <span aria-hidden="true">GEOPHYSICS<br>STUDENT</span>
       <img src="assets/xu-ying-portrait.png" alt="徐莹个人形象照">
     </figure>
     <div class="welcome-orbit" aria-hidden="true"><i></i><i></i><span>EXPLORE<br>MY WORK</span></div>
@@ -29,46 +29,51 @@
     <p class="welcome-note">SCROLL OR CLICK TO CONTINUE</p>
   </section>
   <header class="topbar">
-    <a class="brand" href="#profile"><span>XY</span><div><b>徐莹</b><small>PRODUCT CANDIDATE</small></div></a>
+    <a class="brand" href="#profile"><span>XY</span><div><b>徐莹</b><small>MULTIDISCIPLINARY PROFILE</small></div></a>
     <nav aria-label="主导航"><a href="#profile">简介</a><a href="#journey">履历</a><a href="#projects">项目</a><a href="#contact">联系</a></nav>
     <p class="availability"><i></i> OPEN TO WORK</p>
   </header>
 
   <main>
-    <section id="profile" class="hero">
-      <div class="hero-copy" data-reveal>
-        <h1>把模糊需求，<br>变成<span>可验证</span>的产品路径。</h1>
-        <p class="intro">我是徐莹。我的优势不来自一个标签，而是三种能力的组合：用数据判断、从反馈理解用户、把复杂任务推进到结果。</p>
-        <div class="hero-actions"><a class="primary magnetic" href="#projects">进入项目工作台 <b>↘</b></a><a href="#journey">查看履历</a></div>
-        <div class="pop-facts" aria-label="点击揭晓三个事实">
-          <p>戳开三个关于我的事实 →</p>
-          <button data-pop="90 万字"><i>＋</i><b>?</b><span>持续内容创作</span></button>
-          <button data-pop="20 万"><i>＋</i><b>?</b><span>单部最高阅读</span></button>
-          <button data-pop="500+"><i>＋</i><b>?</b><span>活动覆盖人次</span></button>
-        </div>
+    <section id="profile" class="skills-page section-space">
+      <header class="skills-heading" data-reveal>
+        <p>00 / SKILL MATRIX</p>
+        <div><span>PERSONAL CAPABILITIES</span><h1>我的能力工具箱</h1><p>点击技能方向，查看我如何分析问题、使用工具并推进结果。</p></div>
+      </header>
+
+      <div class="skills-shell" data-reveal>
+        <aside class="skill-tabs" role="tablist" aria-label="个人技能方向">
+          <p>SELECT A FIELD</p>
+          <button class="active" role="tab" aria-selected="true" data-skill="product"><i>01</i><span><b>产品设计与执行</b><small>从需求到可运行方案</small></span><em>↗</em></button>
+          <button role="tab" aria-selected="false" data-skill="ai"><i>02</i><span><b>AI 创作与应用</b><small>工具组合与创意落地</small></span><em>↗</em></button>
+          <button role="tab" aria-selected="false" data-skill="data"><i>03</i><span><b>数据处理与分析</b><small>清洗、计算与结果表达</small></span><em>↗</em></button>
+          <div class="skill-pulse" aria-hidden="true"><i></i><span>EXPLORE<br>THE MATRIX</span></div>
+        </aside>
+
+        <article class="skill-display" aria-live="polite">
+          <div class="skill-glow" aria-hidden="true"></div>
+          <header><p id="skill-kicker">FIELD / 01</p><span id="skill-count">04 MODULES</span></header>
+          <div class="skill-intro"><div><h2 id="skill-title">产品设计与执行</h2><p id="skill-summary">从识别问题、梳理流程到形成方案，并通过 AI 协同把想法推进为可运行的结果。</p></div><b id="skill-index">01</b></div>
+          <div class="skill-modules" id="skill-modules">
+            <button data-module-detail="明确问题、用户与目标，为后续方案建立清晰起点。"><span>01</span><b>需求分析</b><small>识别问题 · 明确目标</small></button>
+            <button data-module-detail="拆解角色、任务和关键节点，让复杂过程变得可理解。"><span>02</span><b>业务流程梳理</b><small>角色 · 任务 · 节点</small></button>
+            <button data-module-detail="将洞察和解决思路组织成可沟通、可执行的方案。"><span>03</span><b>产品提案</b><small>洞察 · 方案 · 表达</small></button>
+            <button data-module-detail="用自然语言与 AI 协同开发，在调试中快速验证想法。"><span>04</span><b>Vibe Coding</b><small>描述 · 开发 · 调试</small></button>
+          </div>
+          <p class="skill-focus" id="skill-focus"><span>CLICK A MODULE</span> 点击任一模块，查看我的使用方式。</p>
+        </article>
       </div>
 
-      <div class="capability-lab" data-reveal aria-label="点击能力卡查看对应证据">
-        <div class="lab-toolbar"><span><i></i><i></i><i></i></span><p>CAPABILITY_LAB.exe</p><small>点击卡片探索</small></div>
-        <div class="lab-canvas">
-          <div class="lab-grid" aria-hidden="true"></div>
-          <p class="lab-label">SELECT A SIGNAL</p>
-          <button class="signal signal-data active" data-signal="data" style="--x:10%;--y:14%"><span>01</span><b>数据判断</b><small>DATA</small></button>
-          <button class="signal signal-user" data-signal="user" style="--x:61%;--y:8%"><span>02</span><b>用户感知</b><small>USER</small></button>
-          <button class="signal signal-drive" data-signal="drive" style="--x:54%;--y:63%"><span>03</span><b>项目推进</b><small>DELIVERY</small></button>
-          <svg class="connector" viewBox="0 0 600 430" preserveAspectRatio="none" aria-hidden="true"><path d="M150 115 C240 110 260 190 310 215"/><path d="M445 100 C380 120 370 170 310 215"/><path d="M420 330 C380 270 350 245 310 215"/></svg>
-          <article class="signal-output" aria-live="polite">
-            <small id="signal-kicker">EVIDENCE / 01</small><strong id="signal-value">完整研究链路</strong><p id="signal-text">用模型、模拟和实验逐层验证结论。</p>
-          </article>
+      <section class="general-skills" data-reveal aria-labelledby="general-title">
+        <header><p>COMPREHENSIVE ABILITIES</p><h2 id="general-title">综合能力</h2><span>把不同能力连接起来，才能真正推动事情发生。</span></header>
+        <div class="general-track">
+          <button data-general="对齐不同角色的信息与目标，让协作过程更顺畅。"><i>01</i><b>跨团队协作</b><span>ALIGN</span></button>
+          <button data-general="拆解任务、跟进节点，并将计划持续推进到交付。"><i>02</i><b>项目推进</b><span>DELIVER</span></button>
+          <button data-general="从受众和目标出发，组织主题、结构与表达方式。"><i>03</i><b>内容策划</b><span>CREATE</span></button>
+          <button data-general="清晰组织观点，主动反馈并推动共识形成。"><i>04</i><b>沟通表达</b><span>CONNECT</span></button>
         </div>
-      </div>
-    </section>
-
-    <section class="proof-strip" aria-label="关键结果" data-reveal>
-      <p>RESULTS, NOT ADJECTIVES</p>
-      <button data-jump="writing"><b>90 万字</b><span>内容反馈循环 ↗</span></button>
-      <button data-jump="aigc"><b>AIGC 视频</b><span>宠物内容生成 ↗</span></button>
-      <button data-jump="tracker"><b>求职网站</b><span>个人产品搭建 ↗</span></button>
+        <p class="general-status" id="general-status">选择一项综合能力，查看它如何参与我的实践。</p>
+      </section>
     </section>
 
     <section id="journey" class="journey section-space">
@@ -81,12 +86,14 @@
           <button role="tab" aria-selected="false" data-journey="achievement"><i>03</i><span><b>个人成就</b><small>奖项、语言与技能证书</small></span><em>↘</em></button>
         </div>
         <article class="campus-detail" aria-live="polite">
-          <header><p class="detail-type" id="journey-type">CAMPUS / CLUB</p><span id="journey-count">02 EXPERIENCES</span></header>
-          <div class="campus-detail-copy"><div><h3 id="journey-title">从参与者到活动推进者</h3><p id="journey-summary">在社团活动中训练沟通、分工和现场推进，也在辩论中持续提升观点组织与表达能力。</p></div><p class="campus-ability"><span>能力迁移</span><b id="journey-result">目标对齐 · 任务拆解 · 沟通协作 · 现场执行</b></p></div>
-          <div class="campus-cards" id="journey-cards">
-            <article><span>社团工作</span><h4>活动策划与组织</h4><p>主导草坪音乐节、英语角等活动，负责方案、分工、协调与现场推进。</p><small>累计覆盖 500+ 人次</small></article>
-            <article><span>表达训练</span><h4>校辩论队经历</h4><p>训练观点拆解、证据组织和异议回应，多次参与校内辩论活动。</p><small>多次获得全场最佳</small></article>
-            <article class="placeholder"><span>待补充</span><h4>更多社团经历</h4><p>这里已经预留内容空间，可继续添加职位、活动或成果。</p><small>等待你的补充</small></article>
+          <header><p class="detail-type" id="journey-type">CAMPUS / CLUB</p><span id="journey-count">03 ASPECTS</span></header>
+          <div class="campus-detail-copy"><div><h3 id="journey-title">校级英语社团｜副主席</h3><p id="journey-summary">围绕学生兴趣策划活动、整合宣传渠道并推进现场执行，在实践中理解从用户触达到活动体验的完整链路。</p></div><p class="campus-ability"><span>能力迁移</span><b id="journey-result">活动策划 · 用户增长 · 渠道整合 · 现场组织</b></p></div>
+          <div class="campus-cards narrative" id="journey-cards">
+            <div class="experience-sheet">
+              <article><span>01</span><div><h4>活动策划与落地</h4><p>策划并组织“草坪乐节”“校内外往来书信”等英语角活动，围绕学生兴趣设计活动形式，推动活动从创意策划到现场执行的完整落地。</p></div></article>
+              <article><span>02</span><div><h4>用户增长与推广</h4><p>主导草坪乐节前期海报设计与宣传策划，采用线上线下联动推广方式扩大活动覆盖面，最终吸引 500+ 人到场并参与活动。</p></div></article>
+              <article><span>03</span><div><h4>能力沉淀</h4><p>通过活动实践，积累用户兴趣洞察、宣传渠道整合与现场组织经验，深化对“用户触达—参与转化—活动体验”完整链路的理解。</p></div></article>
+            </div>
           </div>
         </article>
       </div>
@@ -94,48 +101,40 @@
 
     <section id="projects" class="projects section-space">
       <header class="section-heading" data-reveal><p>02 / PROJECT WORKBENCH</p><div><h2>项目工作台</h2><span>选择项目，查看我的判断与行动</span></div></header>
-      <div class="project-workbench" data-reveal>
-        <aside class="project-lab" role="tablist" aria-label="选择项目">
-          <div class="project-lab-head"><span><i></i><i></i><i></i></span><p>PROJECT PLAYGROUND</p><small>拖动旋转 · 点击选择</small></div>
-          <div class="project-lab-canvas">
-            <p class="project-lab-label">SELECT A PROJECT</p>
-            <div class="project-wheel" data-wheel>
-              <svg viewBox="0 0 500 570" preserveAspectRatio="none" aria-hidden="true"><circle cx="250" cy="285" r="185"/><path d="M132 137 C190 175 205 215 250 285"/><path d="M375 165 C328 195 300 230 250 285"/><path d="M212 457 C220 395 235 345 250 285"/></svg>
-              <button class="project-node node-writing active" role="tab" aria-selected="true" data-project="writing"><i>01</i><b>读者反馈循环</b><small>内容 × 用户洞察</small></button>
-              <button class="project-node node-aigc" role="tab" aria-selected="false" data-project="aigc"><i>02</i><b>AIGC 宠物短视频</b><small>策划 × 生成 × 剪辑</small></button>
-              <button class="project-node node-tracker" role="tab" aria-selected="false" data-project="tracker"><i>03</i><b>OfferFlow</b><small>产品设计 × 独立开发</small></button>
-            </div>
-            <div class="project-hub"><small>CURRENT PROJECT</small><b id="project-hub-title">读者反馈循环</b><span>CLICK TO SWITCH</span></div>
-            <div class="keyboard-hint"><kbd>←</kbd><kbd>→</kbd><span>键盘也可以切换</span></div>
-          </div>
+      <div class="project-workbench project-library" data-reveal>
+        <aside class="project-index" role="tablist" aria-label="选择项目">
+          <header><span>PROJECTS</span><b>03</b></header>
+          <button class="active" role="tab" aria-selected="true" data-project="writing"><i>01</i><span><b>独立内容创作者</b><small>原创内容策划 × 商业化实践</small></span><em>→</em></button>
+          <button role="tab" aria-selected="false" data-project="aigc"><i>02</i><span><b>AIGC 宠物短视频</b><small>AI 工具 × 创意策划 × 独立执行</small></span><em>→</em></button>
+          <button role="tab" aria-selected="false" data-project="tracker"><i>03</i><span><b>OfferFlow</b><small>系统设计 × 开发测试 × 体验优化</small></span><em>→</em></button>
+          <p>点击项目，右侧查看完整经历</p>
         </aside>
 
         <article class="project-panel variant-writing" aria-live="polite" tabindex="-1">
-          <div class="panel-head"><p id="project-meta">2024.09 — 至今 · 独立创作者</p><span id="project-index">01 / 03</span></div>
-          <div class="panel-main">
-            <div class="project-visual">
-              <div class="visual-writing"><span>USER SIGNAL</span><b>20W</b><div class="feedback-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p>观察 → 判断 → 调整 → 验证</p></div>
-              <div class="visual-aigc"><span>GENERATIVE PIPELINE · 02:59</span><video class="project-video" controls playsinline preload="metadata" poster="assets/aigc-pet-video-poster.jpg"><source src="assets/aigc-pet-video.mp4" type="video/mp4">你的浏览器暂不支持视频播放。</video><p>PLAY → PAUSE → EXPLORE THE PROCESS</p></div>
-              <div class="visual-tracker"><span>OFFERFLOW · DATA ANALYSIS</span><a class="offerflow-shot" href="assets/offerflow-dashboard.png" target="_blank" rel="noopener" aria-label="查看 OfferFlow 数据分析界面大图"><img src="assets/offerflow-dashboard.png" alt="OfferFlow 数据分析界面，展示投递阶段和渠道统计"><small>点击查看完整界面 ↗</small></a><p>TRACK → ANALYZE → REVIEW</p></div>
+          <div class="panel-head"><p id="project-meta">独立内容创作者 · 原创内容实践</p><span id="project-index">01 / 03</span></div>
+          <div class="project-detail">
+            <header class="project-copy-head"><p class="story-kicker" id="project-kicker">CONTENT CREATION × COMMERCIALIZATION</p><h3 id="project-title">独立内容创作者｜原创内容策划与商业化实践</h3><p class="story-lead" id="project-lead">从市场选题到内容生产，再以阅读反馈和商业结果验证创作策略。</p><a class="project-live-link" id="project-link" href="#" target="_blank" rel="noopener" hidden>访问项目网站 <b>↗</b></a></header>
+            <div class="project-media">
+              <div class="visual-writing"><img src="assets/creator-metrics.jpg" alt="原创内容创作数据：11 部作品、92 章、680730 总字数"><p>11 部作品 · 92 章 · 680730 字</p></div>
+              <div class="visual-aigc"><video class="project-video" controls playsinline preload="metadata" poster="assets/aigc-pet-video-poster.jpg"><source src="assets/aigc-pet-video.mp4" type="video/mp4">你的浏览器暂不支持视频播放。</video><p>从创意构思到视频成片</p></div>
+              <div class="visual-tracker"><a class="offerflow-shot" href="assets/offerflow-dashboard.png" target="_blank" rel="noopener" aria-label="查看 OfferFlow 数据分析界面大图"><img src="assets/offerflow-dashboard.png" alt="OfferFlow 数据分析界面，展示投递阶段和渠道统计"><small>点击查看完整界面 ↗</small></a><p>岗位管理 · 状态跟踪 · 数据分析</p></div>
             </div>
-            <div class="project-story">
-              <p class="story-kicker" id="project-kicker">CONTENT × USER INSIGHT</p><h3 id="project-title">用 90 万字，建立一套读者反馈循环</h3><p class="story-lead" id="project-lead">长篇内容的难点不是一次写好，而是持续判断读者为什么留下。</p>
-              <div class="story-grid"><div><span>关键判断</span><p id="project-judgement">阅读行为比口头偏好更接近真实需求。</p></div><div><span>行动路径</span><p id="project-action">对比题材与节奏表现，调整下一阶段内容，再用新数据验证。</p></div></div>
-              <div class="story-result"><span>RESULT</span><p id="project-result">累计创作 <b>90 万字</b>，单部最高阅读 <b>20 万</b></p></div>
-              <p class="story-insight"><span>产品启发</span><q id="project-insight">用户说什么值得听，用户实际选择什么更值得看。</q></p>
+            <div class="project-narrative" id="project-narrative">
+              <article><span>01</span><div><h4>内容策划与独立执行</h4><p>独立完成 80+ 篇原创短篇小说，累计约 90 万字，负责市场选题、内容架构、文案撰写及作品交付，具备完整的内容策划与独立项目执行能力。</p></div></article>
+              <article><span>02</span><div><h4>市场洞察与数据驱动</h4><p>通过平台热门榜单、读者反馈及阅读数据分析用户偏好，动态调整创作题材、叙事方式与内容策略，持续优化作品的市场适配度。</p></div></article>
+              <article><span>03</span><div><h4>用户增长与商业化成果</h4><p>通过内容创作与策略调整，单篇作品最高获得 20 万+ 阅读量、实现单篇 3,000+ 元收入，形成从市场分析、内容生产到传播效果与商业价值验证的完整闭环。</p></div></article>
             </div>
           </div>
-          <div class="panel-footer"><span id="project-progress"></span><p>SELECT A CARD / EXPLORE THE PROJECT</p></div>
         </article>
       </div>
     </section>
 
     <section id="contact" class="contact section-space" data-reveal>
-      <div><p>03 / CONTACT</p><h2>一起把一个问题，<br>推进成真正的产品。</h2></div>
-      <div class="contact-card"><span>AVAILABLE FOR PRODUCT ROLES · 2027</span><a href="mailto:2123181811@qq.com">2123181811@qq.com <b>↗</b></a><button id="copy" type="button">复制邮箱</button><p id="copy-status" role="status" aria-live="polite"></p></div>
+      <div><p>03 / CONTACT</p><h2>期待新的问题，<br>也期待一起寻找答案。</h2></div>
+      <div class="contact-card"><span>OPEN TO OPPORTUNITIES · 2027</span><div class="contact-links"><a href="mailto:2123181811@qq.com">2123181811@qq.com <b>↗</b></a><a href="tel:17515102836">175 1510 2836 <b>↗</b></a></div><button id="copy" type="button">复制邮箱</button><p id="copy-status" role="status" aria-live="polite"></p></div>
     </section>
   </main>
-  <footer><p>徐莹 · PRODUCT PORTFOLIO</p><a href="#profile">回到顶部 ↑</a></footer>
+  <footer><p>徐莹 · PERSONAL PORTFOLIO</p><a href="#profile">回到顶部 ↑</a></footer>
   <script src="app.js"></script>
 </body>
 </html>
